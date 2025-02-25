@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+
 
 # command line args
 import argparse
@@ -24,26 +24,10 @@ if args.percent:
 
 # print the count values
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
-#sorted_data = dict(sorted(items.items(), key=lambda x: x[1], reverse=True)[:10])
-sort_data = items[0:10]
-print(sort_data)
+for i,(k,v) in enumerate(items):
 
-#for i,(k,v) in enumerate(items):
- #   print(k,':',v)
-  #  if i == 11:
-   #     break
+    print(k,':',v)
+    if i == 11:
+        break
 
 #create a bar graph with x values: input and y values: value. Only need 10 values
-languages, counts = zip(*sort_data)
-
-plt.figure(figsize=(12, 6))
-plt.bar(languages, counts, color='skyblue')
-plt.title('Language Distribution')
-plt.xlabel('Languages')
-plt.ylabel('Count')
-plt.xticks(rotation=45, ha='right')
-plt.tight_layout()
-save_directory = "/home/ysun26/twitter_coronavirus_andy/src"
-filename = "language_distribution.png"
-full_path = os.path.join(save_directory, filename)
-plt.savefig('language_distribution.png', dpi=300)
