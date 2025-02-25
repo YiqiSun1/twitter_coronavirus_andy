@@ -1,5 +1,5 @@
 
-
+import matplotlib.pyplot as plt
 # command line args
 import argparse
 parser = argparse.ArgumentParser()
@@ -24,10 +24,12 @@ if args.percent:
 
 # print the count values
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
-for i,(k,v) in enumerate(items):
+for i, (k,v) in enumerate(items):
+    
+    print(k,':',v)
+    if i == 10:
+        break
 
-
-#create a bar graph with x values: input and y values: value. Only need 10 values
 plot_title = 'count of '+args.key+' by language'
 png_title = args.input_path+args.key+'.png'
 
@@ -38,3 +40,4 @@ plt.ylabel("Count")
 plt.title(plot_title)
 plt.bar(keys, values)
 plt.savefig(png_title, bbox_inches="tight")
+
