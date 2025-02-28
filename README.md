@@ -19,8 +19,8 @@ JSON is a popular format for storing data that is closely related to python dict
 ## Result
 ![Count_by_language](reduce_language_coronavirus.png)
 ![Count_by_country](reduce_country_coronavirus.png)
-![Count_by_country](reduce_country_koronavirus.png)
-![Count_by_language](reduce_language_koronavirus.png)
+![Count_by_country](reduce_language_코로나바이러스.png)
+![Count_by_language](reduce_country_코로나바이러스.png)
 ##methodology
 This project involves the
 I create a map.py file
