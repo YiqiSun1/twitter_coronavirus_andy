@@ -17,10 +17,10 @@ Each text file contains a single tweet per line in JSON format.
 JSON is a popular format for storing data that is closely related to python dictionaries.
 
 ## Result
-![Count_by_language](reduce_language%23coronavirus.png)
-![Count_by_country](reduce_country%25coronavirus.png)
-![Count_by_country](reduce_country%25%EC%BD%94%EB%A1%9C%EB%82%98%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4.png)
-[Count_by_language](reduce_language%25%EC%BD%94%EB%A1%9C%EB%82%98%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4.png)
+![Count_by_language](reduce_language_coronavirus.png)
+![Count_by_country](reduce_country_coronavirus.png)
+![Count_by_country](reduce_country_koronavirus.png)
+![Count_by_language](reduce_language_koronavirus.png)
 ##methodology
 This project involves the
 I create a map.py file
