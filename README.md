@@ -43,9 +43,9 @@ JSON is a popular format for storing data that is closely related to python dict
 
 ### Step 1: Map
 Generate intermediate outputs using mapping scripts.
-'''
+```
 sh run_maps.sh
-'''
+```
 
 ---
 
@@ -53,21 +53,21 @@ sh run_maps.sh
 Aggregate the mapped data to generate meaningful insights.
 
 For language-based data:
-'''
+```
 python3 src/reduce.py --input_path outputs/*.lang --output_path reduce_language
-'''
+```
 
 For country-based data:
-'''
+```
 python3 src/reduce.py --input_path outputs/*.country --output_path reduce_country
-'''
+```
 ---
 
 ### Step 3: Visualize
 Create visualizations for specific keys or hashtags.
-'''
+```
 python3 src/visualize.py --input_path reduce_country --key "#코로나바이러스"
-'''
+```
 
 You can also replace `"#코로나바이러스"` with other keys from your hashtags file.
 
@@ -75,7 +75,7 @@ You can also replace `"#코로나바이러스"` with other keys from your hashta
 
 ### Step 4: Usage Trend During the Year
 Analyze usage trends for various hashtags throughout the year.
-'''
+```
 python3 src/alternative_reduce.py outputs "#covid2019" "#covid19" "#covid-2019" "#coronavirus" "#corona" "#virus" "#flu" "#sick"
-'''
+```
 
