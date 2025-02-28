@@ -38,8 +38,11 @@ JSON is a popular format for storing data that is closely related to python dict
 
 ---
 
-##implementation
+### 5. Hashtags usage trend
+![Count_by_language](hashtag_usage.png)
 
+
+### implementation
 
 ### Step 1: Map
 Generate intermediate outputs using mapping scripts.
