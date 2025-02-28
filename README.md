@@ -18,46 +18,56 @@ JSON is a popular format for storing data that is closely related to python dict
 
 ## Result
 
+### 1. Count by Language
 ![Count_by_language](reduce_language_coronavirus.png)
+
+---
+
+### 2. Count by Country (Coronavirus)
 ![Count_by_country](reduce_country_coronavirus.png)
+
+---
+
+### 3. Count by Country (코로나바이러스)
 ![Count_by_country](reduce_language_코로나바이러스.png)
+
+---
+
+### 4. Count by Language (코로나바이러스)
 ![Count_by_language](reduce_country_코로나바이러스.png)
 
+---
 
 ##implementation
 
 
 ### Step 1: Map
 Generate intermediate outputs using mapping scripts.
-
-#### Command:
-
+'''
 sh run_maps.sh
-
+'''
 
 ---
 
 ### Step 2: Reduce
 Aggregate the mapped data to generate meaningful insights.
 
-#### Commands:
 For language-based data:
-
+'''
 python3 src/reduce.py --input_path outputs/*.lang --output_path reduce_language
-
+'''
 
 For country-based data:
-
+'''
 python3 src/reduce.py --input_path outputs/*.country --output_path reduce_country
+'''
 ---
 
 ### Step 3: Visualize
 Create visualizations for specific keys or hashtags.
-
-#### Command:
-
+'''
 python3 src/visualize.py --input_path reduce_country --key "#코로나바이러스"
-
+'''
 
 You can also replace `"#코로나바이러스"` with other keys from your hashtags file.
 
@@ -65,9 +75,7 @@ You can also replace `"#코로나바이러스"` with other keys from your hashta
 
 ### Step 4: Usage Trend During the Year
 Analyze usage trends for various hashtags throughout the year.
-
-#### Command:
-
+'''
 python3 src/alternative_reduce.py outputs "#covid2019" "#covid19" "#covid-2019" "#coronavirus" "#corona" "#virus" "#flu" "#sick"
-
+'''
 
