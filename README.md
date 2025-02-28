@@ -17,7 +17,7 @@ Each text file contains a single tweet per line in JSON format.
 JSON is a popular format for storing data that is closely related to python dictionaries.
 
 ## Result
-![count by language](reduce_language#coronavirus.png)
+![Count_by_language](reduce_language%23coronavirus.png)
 
 
 ##methodology
